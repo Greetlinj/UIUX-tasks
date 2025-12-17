@@ -1,0 +1,127 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  background: radial-gradient(circle at center, #111, #000);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Container */
+.vr-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* HUD */
+.hud {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.7);
+  padding: 12px 25px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  box-shadow: 0 0 15px rgba(255,255,255,0.1);
+  backdrop-filter: blur(5px);
+}
+.hud .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.hud button {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.hud button:hover { transform: scale(1.2); }
+
+/* Main Scene */
+.scene {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+.scene h1 {
+  font-size: 3rem;
+  margin: 0;
+  text-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+.scene p {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+.explore-buttons {
+  display: flex;
+  gap: 20px;
+}
+.explore-btn {
+  text-decoration: none;
+  background: #222;
+  padding: 14px 25px;
+  border-radius: 12px;
+  font-size: 1rem;
+  color: #fff;
+  transition: all 0.3s;
+}
+.explore-btn:hover {
+  background: #555;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Floating Menu */
+.menu {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(20,20,20,0.95);
+  padding: 25px;
+  border-radius: 20px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 0 0 25px rgba(255,255,255,0.1);
+  backdrop-filter: blur(5px);
+}
+.menu h2 {
+  margin-top: 0;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+.menu-item {
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 12px;
+  background: #222;
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+.menu-item:hover {
+  background: #444;
+  transform: translateX(5px);
+}
+
+/* Hidden class */
+.hidden { display: none; }

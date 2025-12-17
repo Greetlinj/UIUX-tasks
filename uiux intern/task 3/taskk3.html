@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Instagram Create Flow – Redesign</title>
+  <link rel="stylesheet" href="taskk3.css" />
+</head>
+<body>
+
+<div class="phone">
+
+  <!-- HOME SCREEN -->
+  <section class="screen active" id="home">
+    <header class="header">
+      <span>Create</span>
+      <a href="https://help.instagram.com" target="_blank">Help</a>
+    </header>
+
+    <main class="content">
+
+      <!-- Reel -->
+      <button class="option" id="reelBtn">
+        🎥 Create Reel
+        <span>Record or upload a short video</span>
+      </button>
+
+      <!-- Photo -->
+      <a class="option link"
+         href="https://www.instagram.com/p/new/"
+         target="_blank">
+        📸 Photo Post
+        <span>Upload a photo from gallery</span>
+      </a>
+
+      <!-- Story -->
+      <a class="option link"
+         href="https://www.instagram.com/stories/create/"
+         target="_blank">
+        📖 Story
+        <span>Share a moment that disappears</span>
+      </a>
+
+      <!-- Live -->
+      <a class="option link"
+         href="https://www.instagram.com/live/"
+         target="_blank">
+        🔴 Go Live
+        <span>Start a live broadcast</span>
+      </a>
+
+      <!-- Settings -->
+      <a class="option link"
+         href="https://www.instagram.com/accounts/edit/"
+         target="_blank">
+        ⚙️ Creator Settings
+        <span>Manage privacy & preferences</span>
+      </a>
+
+    </main>
+
+    <footer class="tab-bar">
+      <a href="https://www.instagram.com" target="_blank">🏠</a>
+      <a href="https://www.instagram.com/explore/" target="_blank">🔍</a>
+      <button class="create-btn">＋</button>
+      <a href="https://www.instagram.com/reels/" target="_blank">🎬</a>
+      <a href="https://www.instagram.com/direct/inbox/" target="_blank">💬</a>
+    </footer>
+  </section>
+
+  <!-- CAMERA / REEL SCREEN -->
+  <section class="screen" id="camera">
+    <header class="header">
+      <button id="backBtn">←</button>
+      <span>Reel Camera</span>
+      <a href="https://www.instagram.com/settings/" target="_blank">⚙️</a>
+    </header>
+
+    <video id="cameraView" autoplay muted playsinline></video>
+
+    <footer class="camera-footer">
+      <button class="tool" id="flipCam">🔄 Flip</button>
+      <div class="record-btn"></div>
+      <button class="tool"
+        onclick="window.open('https://www.instagram.com/reels/audio/','_blank')">
+        🎵 Music
+      </button>
+    </footer>
+  </section>
+
+</div>
+
+<script src="taskk3.js"></script>
+</body>
+</html>

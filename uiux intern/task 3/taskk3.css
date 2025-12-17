@@ -1,0 +1,142 @@
+body {
+  background: linear-gradient(135deg,#c13584,#fd1d1d,#f77737);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui, sans-serif;
+}
+
+.phone {
+  width: 375px;
+  height: 650px;
+  background: #fff;
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 25px 50px rgba(0,0,0,.35);
+}
+
+/* Screens */
+.screen {
+  position: absolute;
+  inset: 0;
+  transform: translateX(100%);
+  transition: transform .45s ease;
+}
+
+.screen.active {
+  transform: translateX(0);
+}
+
+/* Header */
+.header {
+  padding: 16px;
+  background: linear-gradient(45deg,#c13584,#fd1d1d);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+.header a, .header button {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Content */
+.content {
+  padding: 24px;
+}
+
+.option {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 14px;
+  border-radius: 16px;
+  background: #f4f4f4;
+  border: none;
+  font-size: 16px;
+  text-align: left;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.option span {
+  display: block;
+  font-size: 13px;
+  color: #666;
+  margin-top: 4px;
+}
+
+.option:hover {
+  background: #eaeaea;
+  transform: translateY(-1px);
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Bottom Tabs */
+.tab-bar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #ddd;
+  background: #fff;
+}
+
+.tab-bar a {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.create-btn {
+  background: linear-gradient(45deg,#fd1d1d,#f77737);
+  color: white;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  border: none;
+  font-size: 22px;
+}
+
+/* Camera */
+video {
+  width: 100%;
+  height: calc(100% - 140px);
+  object-fit: cover;
+  background: black;
+}
+
+.camera-footer {
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.record-btn {
+  width: 64px;
+  height: 64px;
+  background: red;
+  border-radius: 50%;
+}
+
+.tool {
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}

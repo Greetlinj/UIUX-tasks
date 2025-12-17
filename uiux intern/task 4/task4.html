@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VR Museum Experience</title>
+  <link rel="stylesheet" href="task4.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="vr-container">
+
+  <!-- HUD -->
+  <header class="hud">
+    <span class="logo">VR Museum</span>
+    <button id="menuBtn">☰</button>
+  </header>
+
+  <!-- MAIN SCENE -->
+  <main class="scene">
+    <h1>Ancient Art Gallery</h1>
+    <p>Explore exhibits by looking around or using your controller.</p>
+    <div class="explore-buttons">
+      <a href="sculptures.html" class="explore-btn">🏺 Sculptures</a>
+      <a href="paintings.html" class="explore-btn">🖼️ Paintings</a>
+      <a href="history.html" class="explore-btn">📜 History</a>
+    </div>
+  </main>
+
+  <!-- FLOATING MENU -->
+  <aside id="menu" class="menu hidden">
+    <h2>Menu</h2>
+    <a href="sculptures.html" class="menu-item">🏺 Sculptures</a>
+    <a href="paintings.html" class="menu-item">🖼️ Paintings</a>
+    <a href="history.html" class="menu-item">📜 History</a>
+    <a href="about.html" class="menu-item">ℹ️ About VR Museum</a>
+  </aside>
+
+</div>
+
+<script src="task4.js"></script>
+</body>
+</html>
